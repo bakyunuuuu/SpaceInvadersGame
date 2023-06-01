@@ -37,7 +37,7 @@ public class AlienSprite extends Sprite{
         dx = randomDx;
         dy = randomDy;
 
-        fireHandler = new Handler(Looper.getMainLooper()); // 적 공격을 위한 handler
+        fireHandler = new Handler(Looper.getMainLooper()); // 적 공격을 위한 handler --> mainThread의 looper를 가지고 옴
         fireHandler.postDelayed(
                 // delay 주는 함수
                 new Runnable() {
