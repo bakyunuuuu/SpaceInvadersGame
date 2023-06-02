@@ -10,10 +10,10 @@ import com.taewon.mygallag.sprites.Sprite;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class HealitemSprite extends Sprite {
+public class HealItemSprite extends Sprite {
     SpaceInvadersView game;
 
-    public HealitemSprite(Context context, SpaceInvadersView game, float x, float y, int dx, int dy) {
+    public HealItemSprite(Context context, SpaceInvadersView game, float x, float y, int dx, int dy) {
         super(context, R.drawable.heal_item, x, y); // 부모 class 의 생성자를 호출해 sprite를 저장된 이미지 리소스와 위치로 초기화
         this.game = game;
         this.dx = dx;

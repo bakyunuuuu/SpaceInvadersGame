@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.taewon.mygallag.MainActivity;
 import com.taewon.mygallag.R;
 import com.taewon.mygallag.SpaceInvadersView;
-import com.taewon.mygallag.items.HealitemSprite;
+import com.taewon.mygallag.items.HealItemSprite;
 import com.taewon.mygallag.items.PowerItemSprite;
 import com.taewon.mygallag.items.SpeedItemSprite;
 
@@ -247,7 +247,7 @@ public class StarshipSprite extends Sprite{
             game.removeSprite(other);
         }
 
-        if (other instanceof HealitemSprite) {
+        if (other instanceof HealItemSprite) {
             // 힐 아이템을 먹으면
             MainActivity.effectSound(MainActivity.PLAYER_GET_ITEM);
             game.removeSprite(other);

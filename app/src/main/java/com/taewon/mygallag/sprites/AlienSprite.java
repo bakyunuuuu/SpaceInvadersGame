@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.taewon.mygallag.MainActivity;
 import com.taewon.mygallag.SpaceInvadersView;
-import com.taewon.mygallag.items.HealitemSprite;
+import com.taewon.mygallag.items.HealItemSprite;
 import com.taewon.mygallag.items.PowerItemSprite;
 import com.taewon.mygallag.items.SpeedItemSprite;
 
@@ -114,7 +114,7 @@ public class AlienSprite extends Sprite{
             int dx = r.nextInt(10) + 1; // x 축 이동 거리 1 ~ 10
             int dy = r.nextInt(10) + 5; // y 축 이동 거리 5 ~ 15
 
-            game.getSprites().add(new HealitemSprite(context, game, (int) this.getX(), (int) this.getY(), dx, dy)); // HealItemSprite를 게임 sprites에 추가 (시작 위치는 Alien의 위치)
+            game.getSprites().add(new HealItemSprite(context, game, (int) this.getX(), (int) this.getY(), dx, dy)); // HealItemSprite를 게임 sprites에 추가 (시작 위치는 Alien의 위치)
         }
     }
 
